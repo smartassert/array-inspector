@@ -73,6 +73,9 @@ class ArrayInspector
         return $this->createNonEmptyString(trim((string) $this->getString($key)));
     }
 
+    /**
+     * @return null|positive-int
+     */
     public function getPositiveInteger(int|string $key): ?int
     {
         $value = $this->getInteger($key);
